@@ -1,0 +1,10 @@
+<section class="books">
+  <h2>книжки</h2>
+  <div class="book-list">
+    <div class="book-card" *ngFor="let book of books">
+      <h3>{{ book.title }}</h3>
+      <p>автор: {{ book.author }}</p>
+      <a [routerLink]="['/book', book.id]">детаЛьнішкк</a>
+    </div>
+  </div>
+</section>

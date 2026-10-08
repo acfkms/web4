@@ -1,0 +1,49 @@
+.books h2 {
+  color: #2A1A0E;
+  margin-bottom:auto;
+}
+
+.book-list {
+  display: grid;
+  grid-template-columns:auto;
+  gap: 1.5rem;
+}
+
+.book-card {
+  border: #FCF0DA ;
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: #FEF3E2;
+  box-shadow:inset;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.book-card:hover {
+  transform: translateY(-4px);
+  box-shadow:inset;
+}
+
+.book-card h3 {
+  margin-top:auto;
+  color: #2A1A0E;
+}
+
+.book-card p {
+  color: #4C4541;
+  margin:auto;
+}
+
+.book-card a {
+  display: inline-block;
+  padding: 0.4rem 0.9rem;
+  background-color: #F2C46A;
+  color: #FEF3E2;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  transition: background-color 0.2s;
+}
+
+.book-card a:hover {
+  background-color: #F4AE52;
+}

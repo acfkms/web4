@@ -1,0 +1,16 @@
+<section class="book-detail">
+  <div *ngIf="book; else notFound">
+    <h2>{{ book.title }}</h2>
+    <p>автор: {{ book.author }}</p>
+    <p>сторінки: {{ book.pages }}</p>
+    <a routerLink="/books" class="back-link">← Back to list</a>
+  </div>
+
+  <ng-template #notFound>
+    <div class="not-found">
+      <h2>книжки не знайшли</h2>
+      <p>нема книжки з айді {{ id }}.</p>
+      <a routerLink="/books" class="back-link">назад до списку</a>
+    </div>
+  </ng-template>
+</section>
